@@ -1,24 +1,38 @@
-# README
+# freelancer-bootstrap-theme-rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+freelancer bootstrap theme for rails
 
-Things you may want to cover:
+the original theme: https://startbootstrap.com/template-overviews/freelancer/
+
+This project is using Bootstrap v4.0.0.alpha6
 
 * Ruby version
 
+Using Ruby 2.4.0 and Rails 5.0.4
+
 * System dependencies
+
+Dependencies are already in the gemfile or in vendor/assets
 
 * Configuration
 
+To use contact form, you need to set up your .env with
+
+MAIL_USERNAME=yourgmailuser@gmail.com
+MAIL_PASSWORD=your_password
+
+Set up your .env with
+
+POSTGRES_HOST=localhost or your external host
+POSTGRES_USER=postgres_user
+POSTGRES_PASSWORD=postgres_password
+
 * Database creation
+
+rails db:create
 
 * Database initialization
 
-* How to run the test suite
+rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
