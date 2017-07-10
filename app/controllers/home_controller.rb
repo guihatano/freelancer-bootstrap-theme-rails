@@ -8,7 +8,7 @@ class HomeController < ApplicationController
 		@message = Message.new(message_params)
     if @message.valid?
       ContactMailer.new_message(@message).deliver
-      redirect_to root_path, :flash => {:success => "Message sent"}
+      # redirect_to root_path, :flash => {:success => "Message sent"}
     else
       render :index
     end

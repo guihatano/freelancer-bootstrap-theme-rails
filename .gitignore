@@ -14,7 +14,6 @@ capybara-*.html
 /spec/tmp/*
 **.orig
 rerun.txt
-.env
 
 !/log/.keep
 !/tmp/.keep
