@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p><%= "#{@message.name} <#{@message.email}> wrote:" %></p>
+
+    <p><%= "Phone: #{@message.phone}" %> </p>
+
+    <div><pre><%= @message.content %></pre></div>
+  </body>
+</html>

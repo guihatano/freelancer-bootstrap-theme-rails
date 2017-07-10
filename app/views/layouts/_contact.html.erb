@@ -1,0 +1,45 @@
+<section id="contact">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <hr class="star-primary">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <%= form_for @message, url: root_path, html: { novalidate: true, id: 'contactForm', name: 'sentMessage'} do |message_form| %>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Name</label>
+                <%= message_form.text_field :name, placeholder: "Name", class: 'form-control', id: 'name', required: true, "data-validation-required-message" => "Please enter your name." %>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Email Address</label>
+                <%= message_form.text_field :email, class: 'form-control', id: 'email', type: 'email', placeholder: "Email Address", required: true, "data-validation-required-message" => "Please enter your email address." %>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Phone Number</label>
+                <%= message_form.text_field :phone, class: 'form-control', id: 'phone', type: 'tel', placeholder: "Phone Number", required: true, "data-validation-required-message" => "Please enter your phone number." %>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Message</label>
+                <%= message_form.text_area :content, class: 'form-control', id: 'message', rows: 5, placeholder: "Message", required: true, "data-validation-required-message" => "Please enter a message." %>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success btn-lg">Send</button>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>

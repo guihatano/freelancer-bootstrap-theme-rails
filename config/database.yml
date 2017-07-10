@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: freelancer_development
+
+test:
+  <<: *default
+  database: freelancer_test
+
+production:
+  <<: *default
+  database: freelancer_production
+  username: freelancer-user
+  password: <%= ENV['FREELANCER-BOOTSTRAP_DATABASE_PASSWORD'] %>
