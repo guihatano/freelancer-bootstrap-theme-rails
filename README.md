@@ -6,32 +6,34 @@ the original theme: https://startbootstrap.com/template-overviews/freelancer/
 
 This project is using Bootstrap v4.0.0.alpha6
 
-* Ruby version
+## Ruby version
 
 Using Ruby 2.4.0 and Rails 5.0.4
 
-* System dependencies
+## System dependencies
 
-Dependencies are already in the gemfile or in vendor/assets
+- Ruby
+- PostgreSQL
+Other dependencies are already in the gemfile or in vendor/assets
 
-* Configuration
+## Configuration
 
-To use contact form, you need to set up your .env with
+To use contact form, you need to set up your .env with:
 
-MAIL_USERNAME=yourgmailuser@gmail.com
-MAIL_PASSWORD=your_password
+- MAIL_USERNAME=yourgmailuser@gmail.com
+- MAIL_PASSWORD=your_password
 
-Set up your .env with
+Set up your .env to use the DB with:
 
-POSTGRES_HOST=localhost or your external host
-POSTGRES_USER=postgres_user
-POSTGRES_PASSWORD=postgres_password
+- POSTGRES_HOST=localhost or your external host
+- POSTGRES_USER=postgres_user
+- POSTGRES_PASSWORD=postgres_password
 
-* Database creation
+## Database creation
 
 rails db:create
 
-* Database initialization
+## Database initialization
 
 rails db:migrate
 
