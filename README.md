@@ -8,7 +8,7 @@ This project is using Bootstrap v4.0.0.alpha6
 
 ## Ruby version
 
-Using Ruby 2.4.0 and Rails 5.0.4
+Using Ruby 2.6.5 and Rails 5.0.4
 
 ## System dependencies
 
